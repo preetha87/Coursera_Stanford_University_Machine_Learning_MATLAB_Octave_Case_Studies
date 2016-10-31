@@ -103,3 +103,4 @@ Theta2_grad(:,2:end) = Theta2_grad(:,2:end) + c * Theta2(:,2:end);
 % Unroll gradients
 grad = [Theta1_grad(:) ; Theta2_grad(:)];
 end
+
