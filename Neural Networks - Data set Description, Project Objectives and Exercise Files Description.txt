@@ -1,0 +1,59 @@
+Neural Networks Case Study 
+
+Data Set Description 
+
+1. The data set consists of 5000 training examples and 400 features (excluding the intercept term). Each training example represents a hand-written digit and each feature corresponds to a greyscale value for a piece of the 20 x 20 grid. 
+
+2. y is a vector of 5000 training examples (each handwritten digit) and its size will be 5000x1. 
+
+3. There are 10 possible values either be 1 or 2 or 3...up to 10 (note in the data set, the digit 10, has been indexed as 0, to avoid confusion with the indexing). 
+
+4. X will be a matrix having a size of 5000x401. There are 10 possible classes, so 10 separate logistic regression classifiers need to be trained to identify a specific digit 
+(the 1st classifier is trained to identify the 1st digit, etc.). 
+
+5.The original 400 features have already been scaled. That is, the image matrix X (with all 400 features (excluding the intercept term) comprise of floating point values between -0.5 and 1.0. 
+Now, remember, -1.0 is black, 0 is medium gray (the image background), and +1.0 is white. 
+
+
+Objectives
+
+1. To implement the Feed Forward and Back Propagation algorithms through vector and matrix operations, to train a neural network in the task of hand-written digit recognition
+
+The optimization method used is the Conjugate Gradient Method. This case study is a Multi-class classification problem.
+
+
+Exercise Scripts
+
+The following are the MATLAB / OCTAVE scripts were included as part of the programming exercise:
+
+ex4.m - Octave/MATLAB script that sequentially takes you through each part of the exercise
+
+ex4data1.mat - Training set of hand-written digits
+
+ex4weights.mat - Neural network parameters for exercise 4
+
+submit.m - Submission script that sends your solutions to our servers
+
+displayData.m - Function to help visualize the dataset
+
+fmincg.m - Function minimization routine (similar to fminunc)
+
+sigmoid.m - Sigmoid function
+
+computeNumericalGradient.m - Numerically compute gradients
+
+checkNNGradients.m - Function to help check gradients
+
+debugInitializeWeights.m - Function for initializing weights
+
+predict.m - Neural network prediction function
+
+
+The following were the MATLAB / OCTAVE files for this exercise that had to be completed as programming assignments. 
+These have been uploaded to the GitHub repository to showcase my coding work in MATLAB and Octave:
+
+sigmoidGradient.m - Compute the gradient of the sigmoid function
+
+randInitializeWeights.m - Randomly initialize weights
+
+nnCostFunction.m - Neural network cost function
