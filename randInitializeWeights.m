@@ -23,5 +23,4 @@ W = rand(L_out, 1 + L_in) * 2 * epsilon_init - epsilon_init;
 % =========================================================================
 %The choice of epsilon is governed by the following formula:
 %epsilon_initial = (6)^0.5 / (Number of units in the input layer + Numbe of units in the hidden layer)^0.5
-
 end
